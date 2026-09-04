@@ -10,7 +10,12 @@ jobs:
   test-bot:
     strategy:
       matrix:
-        os: [ macos-15-intel, macos-26 ]
+        # macos-26 = Apple Silicon (the primary target; the companion app is
+        # Apple-Silicon-only). macos-15-intel dropped: GitHub's Intel runners are
+        # being sunset and repeatedly failed here on network/DNS while installing
+        # test-bot's own helpers (shellcheck/gmp) — never on this formula, which
+        # is arch-agnostic C. ubuntu (below) covers the non-macOS build.
+        os: [ macos-26 ]
         include:
           - os: ubuntu-latest
             container:
