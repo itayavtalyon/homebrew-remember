@@ -5,12 +5,15 @@ a local CLI personal second brain (SQLite + FTS5).
 
 ```bash
 brew install itayavtalyon/remember/remember
+remember-install-skill
 ```
 
 That is shorthand for tapping this repo and installing the formula; Homebrew
 adds the tap automatically. The formula builds the release binary from source
-(needs `cmake`; no other dependencies) and installs `remember` only. For the
-agent skill, run `scripts/install.sh --skill-only` from a clone of the main repo.
+(needs `cmake`; no other dependencies). Homebrew cannot write into `~/.claude`
+/ `~/.grok` / `~/.cursor`, so the keg ships the skill and
+`remember-install-skill` symlinks it into agent trees that already exist.
+Re-run after installing a new agent.
 
 Upgrade / uninstall as usual:
 
