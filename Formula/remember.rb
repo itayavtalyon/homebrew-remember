@@ -1,8 +1,8 @@
 class Remember < Formula
   desc "Local personal second brain backed by SQLite and FTS5 full-text search"
   homepage "https://github.com/itayavtalyon/remember"
-  url "https://github.com/itayavtalyon/remember/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "3a72bc46b2915c93feda211c582f15655e0ca8e62f4e2c42311f6b42d4f777ac"
+  url "https://github.com/itayavtalyon/remember/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "15cd287a2fe4e0ca9da44332e7eab2aeb37f0485e946bf7e2f5c6d6bc652e0b5"
   license "MIT"
   head "https://github.com/itayavtalyon/remember.git", branch: "main"
 
