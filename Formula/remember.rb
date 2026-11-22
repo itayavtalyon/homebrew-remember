@@ -1,8 +1,8 @@
 class Remember < Formula
   desc "Local personal second brain backed by SQLite and FTS5 full-text search"
   homepage "https://github.com/itayavtalyon/remember"
-  url "https://github.com/itayavtalyon/remember/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "15cd287a2fe4e0ca9da44332e7eab2aeb37f0485e946bf7e2f5c6d6bc652e0b5"
+  url "https://github.com/itayavtalyon/remember/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "549cfc0a09f839f962d93f7408193acc77f6eb3b69632ea65a9e337dd38218fc"
   license "MIT"
   head "https://github.com/itayavtalyon/remember.git", branch: "main"
 
@@ -16,7 +16,7 @@ class Remember < Formula
 
   def caveats
     <<~EOS
-      Homebrew cannot write into ~/.claude, ~/.grok, or ~/.cursor.
+      Homebrew cannot write into ~/.claude, ~/.grok, ~/.cursor, or ~/.codex.
 
       After install (and after adding a new agent product), symlink the skill:
         remember-install-skill
